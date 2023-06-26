@@ -15,8 +15,18 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   list-style: none;
   grid-gap: 1.5rem;
+  position: relative;
 }
 
 .animes-list img {
   max-width: 100%;
+}
+
+.more {
+  display: none;
+}
+
+li:hover .more {
+  position: absolute;
+  display: block;
 }

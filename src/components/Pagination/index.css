@@ -1,17 +1,39 @@
 .pagination {
     display: flex;
     list-style: none;
+    margin-top: 50px;
 }
 
-.pagination li + li {
+.pagination li+li {
     margin-left: 1rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border: 1px solid rgb(114, 30, 114);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(114, 30, 114);
+    color: #ffffff;
+}
+.pagination__item--desactive {
+    display: none;
 }
 
 .pagination__item--active {
     background: none;
     font-weight: bold;
     border: none;
+    border-bottom: 2px solid rgb(114, 30, 114);
 }
+
 .pagination__item--active:focus {
     outline: none;
 }

@@ -31,7 +31,8 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
             <li>
                 <button
                     onClick={() => onPageChange(current - 1)}
-                    disabled={current === 1}
+                 //   disabled={current === 1}
+                    className={current === 1 ? 'pagination__item--desactive' : null}
                 >
                     Anterior
                 </button>
@@ -55,7 +56,8 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
             <li>
                 <button
                     onClick={() => onPageChange(current + 1)}
-                    disabled={current === pages}
+                   // disabled={current === pages}
+                    className={current === pages ? 'pagination__item--desactive' : null}
                 >
                     Proximo
                 </button>

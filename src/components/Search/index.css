@@ -1,0 +1,30 @@
+.searchInput {
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.searchInput:focus-within {
+    border: 1px solid  rgb(211, 171, 112);
+}
+
+.searchInput input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 20px;
+    outline: none;
+}
+
+.searchInput i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(196, 196, 192);
+}

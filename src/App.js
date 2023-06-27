@@ -63,6 +63,9 @@ function App() {
                 alt={anime.attributes.canonicalTitle}
               />
               <div className='more'>
+                <div className='dataAnime'>
+                  Saiba mais <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
                 {anime.attributes.canonicalTitle}
               </div>
             </li>
